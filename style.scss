@@ -16,3 +16,16 @@ p {
 
 $styles: 10px 20px, 'Arial', 50%;
 $boolean: true;
+
+
+
+articule.art {
+    h2 {
+        font-style: italic;
+        font-size: 4rem;
+    }
+    p {
+        background-color: #fff;
+        color: blueviolet;
+    }
+}
