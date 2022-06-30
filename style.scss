@@ -5,3 +5,14 @@ body {
     background-color: $bgColor;
     color: $fontColor;
 }
+
+p {
+    background-color: $fontColor;
+    color: $bgColor;
+}
+
+// Variables con diferentes tipos: numbers, string, boolean
+// y propiedades separadas por coma.
+
+$styles: 10px 20px, 'Arial', 50%;
+$boolean: true;
