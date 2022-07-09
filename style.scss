@@ -18,11 +18,12 @@ h2 {
 // Variables con diferentes tipos: numbers, string, boolean
 // y propiedades separadas por coma.
 
-$styles: 10px 20px, 'Arial', 50%;
+$styles: 10px;
 $boolean: true;
 
 articule.art {
     h2 {
+        border: $styles solid salmon;
         font-style: italic;
         font-size: 4rem;
     }
@@ -30,6 +31,7 @@ articule.art {
         background-color: #fff;
         color: blueviolet;
     }
+
 }
 
 // continuar con el curso
