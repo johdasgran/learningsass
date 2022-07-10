@@ -1,77 +1,68 @@
 @import "./sass/globals.scss";
 
-
 // Variables con diferentes tipos: numbers, string, boolean
 // y propiedades separadas por coma.
 // continuar con el curso
 
-
 .cards__container {
-    z-index: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    margin: 30px auto;
-    width: 300px;
-    height: 300px;
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+
+  &__image {
+    width: inherit;
+    height: inherit;
     border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transition: 0.4s;
-
-    &__image {
-        width: inherit;
-        height: inherit;
-        border-radius: 40px;
-      }
-      
-      &__image img {
-        width: inherit;
-        height: inherit;
-        border-radius: 40px;
-        object-fit: cover;
-      }
-      
-      &__title {
-        text-align: center;
-        border-radius: 0px 0px 40px 40px;
-        font-family: sans-serif;
-        font-weight: bold;
-        font-size: 30px;
-        margin-top: -80px;
-        height: 40px;
-      }
-      
-      &__title--white {
-        color: white;
-      }
-      
-      &__title--black {
-        color: black;
-      }
-
-
   }
-  
 
-  .card:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  &__image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
   }
-  
 
-
-
-  
-  @media all and (max-width: 500px) {
-    .cards__container {
-      /* On small screens, we are no longer using row direction but column */
-      flex-direction: column;
-    }
+  &__title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
   }
-  
+
+  &__title--white {
+    color: white;
+  }
+
+  &__title--black {
+    color: black;
+  }
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+@media all and (max-width: 500px) {
+  .cards__container {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
