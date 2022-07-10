@@ -4,9 +4,6 @@
 // y propiedades separadas por coma.
 // continuar con el curso
 
-
-
-
 .cards__container {
   z-index: 0;
   width: 100%;
@@ -32,16 +29,16 @@
   }
 
   &__image img {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
+    // width: inherit;
+    // height: inherit;
+    // border-radius: 40px;
+    @extend .card__image;
     object-fit: cover;
   }
 
   &__title {
     text-align: center;
     border-radius: 0px 0px 40px 40px;
-    font-family: sans-serif;
     font-weight: bold;
     font-size: 30px;
     margin-top: -80px;
