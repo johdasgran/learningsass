@@ -29,9 +29,6 @@
   }
 
   &__image img {
-    // width: inherit;
-    // height: inherit;
-    // border-radius: 40px;
     @extend .card__image;
     object-fit: cover;
   }
