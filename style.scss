@@ -41,17 +41,14 @@
     font-size: 30px;
     margin-top: -80px;
     height: 40px;
-    // @include title(black);
   }
 
   &__title--white {
     color: white;
-    // @include title(white);
   }
 
   &__title--black {
     color: black;
-    // @include title(black);
   }
 }
 
